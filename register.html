@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register | Online Exam</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Background with Fresh Gradient */
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            min-height: 100vh;
+        }
+        /* Left Side with Background Image */
+        .left-side {
+            flex: 1;
+            background-image: url('images/DALL·E 2025-03-24 09.36.50 - A realistic digital illustration of a young woman in professional attire sitting alone in a classroom, writing an exam. The classroom is quiet, with r.webp');
+            background-size: cover;
+            background-position: center;
+            
+        }
+        /* Right Side with Student Info */
+        .right-side {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(170, 156, 156, 0.9);
+            padding: 40px;
+            
+            
+        }
+
+        /* Card Design */
+        .card {
+            text-align: center;
+            background: #ffffff;
+            color: #333333;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        /* Heading */
+        h4 {
+            text-align: center;
+            color: #ff7e5f;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Form Fields */
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            color: #333333;
+            border-radius: 8px;
+            transition: 0.2s;
+        }
+
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px #ff7e5f;
+            border: 1px solid #ff7e5f;
+        }
+
+        /* Button */
+        .btn-primary {
+            background: #ff7e5f;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .btn-primary:hover {
+            background: #ea5455;
+            transform: translateY(-2px);
+        }
+
+        /* Links */
+        .text-center a {
+            color: #ff7e5f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .text-center a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Left Side with Background Image -->
+    <div class="left-side"></div>
+
+    <!-- Right Side with Registration Form -->
+    <div class="right-side">
+        <div class="card">
+            <h4>Student Registration</h4>
+            <form action="register.php" method="POST">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" class="form-control" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" name="password" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="text" class="form-control" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Register</button>
+            </form>
+            <div class="text-center mt-3">
+                <a href="index.html">Back to Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

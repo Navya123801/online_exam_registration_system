@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Exam | Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Body and background */
+        body {
+            margin: 0;
+            padding: 0;                
+            height: 100vh;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            background: url('images/DALL·E 2025-03-25 10.41.03 - A highly realistic digital image of a classroom filled with college students sitting at desks, attentively writing their exams. The students are dress.webp') no-repeat center center;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Card container */
+        .login-container {
+            width: 100%;
+            max-width: 360px;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Title */
+        h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Input fields */
+        .form-control {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        /* Login button */
+        .btn-primary {
+            background: linear-gradient(90deg,rgb(105, 100, 102),rgb(32, 26, 15));
+            border: none;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(90deg,rgb(173, 169, 162),rgb(24, 22, 23));
+        }
+
+        /* Links */
+        .links {
+            margin-top: 15px;
+        }
+
+        .links a {
+            color:rgb(190, 45, 98);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h3>Login For Exam Registeration</h3>
+        <form action="login.php" method="POST">
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+            <div class="links">
+                <a href="forgot_password.php">Forgot Password?</a> | 
+                <a href="register.html">Register Now</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
